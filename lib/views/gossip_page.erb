@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gossip - The Gossip Project</title>
+</head>
+<body>
+	<h1>Bienvenue sur la page du potin n°<%= id %></h1>
+	<!-- on affiche la variable id  -->
+	<p>Son auteur : <%= gossips.fetch(id - 1 ).gossip_author %><br>
+		<!-- dans la variable gossips qui est un tableau, on va chercher l'auteur du gossip n° [variable id] -->
+		<!-- on retire 1 car l'index du tableau commence à 0, or les url commencent à 1 -->
+		Le potin balancé : <%= gossips.fetch(id - 1).gossip_content %>
+		<!-- idem, on va chercher le gossip n° [variable id] -->
+
+	</p>
+	<p>
+		<a href="/">Page des potins</a>
+		<!-- permet de rediriger vers la page d'accueil -->
+	</p>
+
+</body>
+</html>

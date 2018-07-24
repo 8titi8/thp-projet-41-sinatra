@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>New gossip - The Gossip Project</title>
+	</head>
+
+	<body>
+		<h2>C'est le moment de tout révéler..</h2>
+		<p>Par ici les potins !!! :)</p>
+		<form action="/gossips/new" method="post">
+			<fieldset>
+				<legend>Envoyer un gossip</legend><br>
+				Ton surnom #anonymous<br>
+				<input type="text" name="gossip_author"><br>
+				<input type="radio" name="gender" value="male">Homme<br>
+				<input type="radio" name="gender" value="female">Femme<br><br>
+				Ton gossip<br>
+				<input type="text" name="gossip_content"><br><br>
+				<input type="submit"><br>
+			</fieldset>
+		</form>
+	</body>
+</html>
